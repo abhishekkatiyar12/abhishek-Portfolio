@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  min-height: 100vh;
+  max-width: 70%;
+  width: 100%;
+  background-color: aqua;
+  padding: 20px;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}

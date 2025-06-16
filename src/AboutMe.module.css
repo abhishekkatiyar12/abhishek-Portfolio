@@ -1,0 +1,67 @@
+.container {
+  background-color: darkgray;
+  height: 700px;
+  width: 95%;
+  border-radius: 20px;
+  align-self: center;
+  padding: 10px;
+  background-image: url("kiet.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+}
+.left1 {
+  height: 50%;
+  padding: 10px;
+}
+.left11 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left2 {
+  height: 50%;
+  color: rgb(20, 20, 20);
+  background-color: #5e5d4d;
+  width: 90%;
+  text-align: left;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+}
+.right {
+  width: 40%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("react.svg");
+}
+
+
+.github{
+  margin: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: space-around;
+}
