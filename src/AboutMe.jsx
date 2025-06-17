@@ -28,6 +28,10 @@ function AboutMe() {
         <a href="github.com">repositories forks</a>
         <a href="github.com">github followers</a>
       </div>
+      <div className={styles.aboutcontainer}>
+        <div className={styles.l}>About Me</div>
+        <div className={styles.r}>Right</div>
+      </div>
     </div>
   );
 }
