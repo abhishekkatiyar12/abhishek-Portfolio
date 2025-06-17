@@ -1,4 +1,5 @@
 import AboutMe from "./AboutMe"
+import ContactMe from "./ContactMe"
 import Container from "./Container"
 import Navbar from "./Navbar"
 
@@ -7,6 +8,7 @@ function App() {
      <Container>
       <Navbar/>
       <AboutMe/>
+      <ContactMe/>
       </Container>
  
   )
