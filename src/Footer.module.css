@@ -1,0 +1,24 @@
+
+
+.footer{
+  
+  padding: 20px;
+  color: aliceblue;
+  width: 550px;
+  /* border: 2px solid red; */
+  /* display: flex; */
+  /* justify-content: center; */
+  align-self: center;
+}
+
+.copyright{
+  color: rgb(95, 121, 122);
+  /* align-self:flex-start; */
+}
+
+.lower{
+  margin-top: 40px;
+  display: flex;
+  justify-content:space-between;
+}
+
