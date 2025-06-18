@@ -4,6 +4,7 @@ function AboutMe() {
     <div className={styles.container}>
       <h1>ABOUT ME</h1>
       <div className={styles.subcontainer}>
+         
         <div className={styles.left}>
           <div className={styles.left1}>
             <h1>hey, I'm Abhishek👋</h1>
@@ -19,7 +20,7 @@ function AboutMe() {
             moving, don't settle. 🚀
           </div>
         </div>
-        <div className={styles.right}>right</div>
+        {/* <div className={styles.right}>right</div> */}
       </div>
       <div className={styles.github}>
         <a href="github.com">github</a>
@@ -48,7 +49,7 @@ function AboutMe() {
           <div className={styles.studiocontainer}>
           <div className={styles.mystudioheading}>MY STUDIO</div>
           <div>
-            Namaste!🙏 suhaib.dev is more than a portfolio; it's a window into
+            Namaste!🙏 abhishek.dev is more than a portfolio; it's a window into
             my world, where passion meets purpose. Discover my work.
           </div>
           <div className={styles.downloadcv}>
