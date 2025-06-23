@@ -1,12 +1,25 @@
 .ContactMe {
-  padding: 20px;
+  padding: 40px;
   color: #ffffff;
-  font-family: cursive;
-  background-color: #2c2c2c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #1e1e1e, #2c2c2c);
   border-radius: 15px;
   width: 90%;
-  margin: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ContactMe h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ContactMe p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ccc;
 }
 
 .outer {
@@ -18,6 +31,7 @@
 .upper {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .upperLeft,
@@ -25,6 +39,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  min-width: 250px;
 }
 
 .lower {
@@ -35,24 +50,31 @@
 input,
 textarea {
   border-radius: 10px;
-  background-color: rgb(76, 75, 75);
-  color: white;
+  background-color: #3a3a3a;
+  color: #ffffff;
   font-size: 1rem;
-  padding: 10px;
-  border: none;
+  padding: 12px;
+  border: 1px solid #555;
   margin-top: 5px;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00bcd4;
+  background-color: #444;
 }
 
 textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 120px;
 }
 
-/* ✅ Character count display below textarea */
 .charCount {
   text-align: right;
-  font-size: 0.9rem;
-  color: #ccc;
+  font-size: 0.85rem;
+  color: #aaaaaa;
   margin-top: 5px;
   margin-right: 5px;
 }
@@ -60,21 +82,56 @@ textarea {
 .buttonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #5e5d4d;
-  color: white;
+  padding: 12px 28px;
+  background-color: #00bcd4;
+  color: #fff;
   border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  border-radius: 8px;
   font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #77755f;
+  background-color: #0097a7;
+}
+
+.connectSection {
+  margin-top: 40px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.connectSection p {
+  /* margin-bottom: 10px; */
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left:15px ;
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #ff4081;
 }
 
 @media (max-width: 768px) {
@@ -87,5 +144,14 @@ button:hover {
   input,
   textarea {
     width: 100%;
+  }
+
+  .buttonContainer button {
+    width: 100%;
+  }
+
+  .socialLinks {
+    flex-direction: column;
+    gap: 10px;
   }
 }

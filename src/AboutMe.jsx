@@ -1,76 +1,57 @@
 import styles from "./AboutMe.module.css";
+
 function AboutMe() {
   return (
     <div className={styles.container}>
-      <h1>ABOUT ME</h1>
+      <h1 className={styles.pageTitle}>ABOUT ME</h1>
       <div className={styles.subcontainer}>
-         
         <div className={styles.left}>
           <div className={styles.left1}>
-            <h1>hey, I'm Abhishek👋</h1>
-            <div className={styles.left11}>
-              Passionate FullStack Web Developer from Kanpur, pushing the
-              boundaries of web technology to create immersive digital
-              experiences.
-            </div>
+            <h1 className={styles.intro}>Hey, I'm Abhishek 👋</h1>
+            <p className={styles.left11}>
+              Passionate FullStack Web Developer from Kanpur, pushing the boundaries of web technology to create immersive digital experiences.
+            </p>
           </div>
           <div className={styles.left2}>
-            My Mission Bridging the Gap Between Design and Development: Where
-            creativity meets functionality, and innovation drives progress. Keep
-            moving, don't settle. 🚀
+            <strong>My Mission:</strong> Bridging the Gap Between Design and Development — where creativity meets functionality, and innovation drives progress. Keep moving, don't settle. 🚀
           </div>
         </div>
-        {/* <div className={styles.right}>right</div> */}
       </div>
+
       <div className={styles.github}>
-        <a href="github.com">github</a>
-        <a href="github.com">commits</a>
-        <a href="github.com">repositories forks</a>
-        <a href="github.com">github followers</a>
+        <a href="https://github.com/abhishekkatiyar12" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/abhishekkatiyar12?tab=overview" target="_blank" rel="noopener noreferrer">Commits</a>
+        <a href="https://github.com/abhishekkatiyar12?tab=repositories" target="_blank" rel="noopener noreferrer">Repositories</a>
+        <a href="https://github.com/abhishekkatiyar12?tab=followers" target="_blank" rel="noopener noreferrer">Followers</a>
       </div>
+
       <div className={styles.aboutcontainer}>
         <div className={styles.l}>
-          <h1>About Me</h1>
-          <p>
-            I have been coding for over 5 years, beginning my journey in 2020.
-            Initially, I learned HTML, CSS, and JavaScript to build websites.
-          </p>
-          <p>
-            My first project was a simple website built with HTML, CSS, and
-            JavaScript (~mid-2020).
-          </p>
-          <p>
-            As I progressed, I focused heavily on React.js and Next.js. Now, I
-            specialize in building SaaS applications with modern web
-            technologies.
-          </p>
+          <h2>About Me</h2>
+          <p>I started my coding journey in 2020, beginning with HTML, CSS, and JavaScript to create basic web pages.</p>
+          <p>My first project was a static website using only vanilla technologies, which laid the foundation for deeper exploration.</p>
+          <p>Over time, I mastered modern frameworks like React.js and Next.js. I now specialize in building SaaS platforms, portfolios, and dynamic web tools.</p>
         </div>
+
         <div className={styles.r}>
           <div className={styles.studiocontainer}>
-          <div className={styles.mystudioheading}>MY STUDIO</div>
-          <div>
-            Namaste!🙏 abhishek.dev is more than a portfolio; it's a window into
-            my world, where passion meets purpose. Discover my work.
-          </div>
-          <div className={styles.downloadcv}>
-            <button className={styles.cvbutton}>Download cv</button>
-          </div>
-          <div className={styles.studioblock}>
-            <div className={styles.studioLeft} >
-              <h4>Web Development</h4>
-              <p>
-                Building high-performance websites with clean code and strong
-                SEO fundamentals.
-              </p>
+            <h3 className={styles.mystudioheading}>MY STUDIO</h3>
+            <p>Namaste! 🙏 abhishek.dev isn't just a portfolio; it’s a creative space where passion meets purpose. Dive in and explore my digital world.</p>
+            <div className={styles.downloadcv}>
+              <a href="/Abhishek_Katiyar_Resume.pdf" download>
+                <button className={styles.cvbutton}>Download CV</button>
+              </a>
             </div>
-            <div className={styles.studioRight}>
-              <h4>UI/UX Design</h4>
-              <p>
-                Crafting modern, intuitive user interfaces that engage and
-                convert users.
-              </p>
+            <div className={styles.studioblock}>
+              <div className={styles.studioLeft}>
+                <h4>Web Development</h4>
+                <p>Building fast, scalable, and accessible websites with clean code and solid SEO.</p>
+              </div>
+              <div className={styles.studioRight}>
+                <h4>UI/UX Design</h4>
+                <p>Designing modern, user-centric interfaces that enhance usability and engagement.</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
