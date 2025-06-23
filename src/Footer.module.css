@@ -1,7 +1,4 @@
-
-
-.footer{
-  
+.footer {
   padding: 20px;
   color: aliceblue;
   width: 550px;
@@ -11,14 +8,32 @@
   align-self: center;
 }
 
-.copyright{
+.copyright {
   color: rgb(95, 121, 122);
   /* align-self:flex-start; */
 }
 
-.lower{
+.lower {
   margin-top: 40px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
+.ImportantLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  margin: 2px;
+}
