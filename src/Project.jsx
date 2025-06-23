@@ -9,6 +9,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/abhishekkatiyar/image-generator",
     live: "https://img-generator-umber.vercel.app/",
+    image: "https://raw.githubusercontent.com/abhishekkatiyar/image-generator/main/demo.png"
   },
   {
     title: "URL Shortener",
@@ -17,6 +18,7 @@ const projects = [
     tech: ["React", "Express", "MongoDB", "JWT"],
     github: "https://github.com/abhishekkatiyar/url-shortener",
     live: "",
+    image: "https://raw.githubusercontent.com/abhishekkatiyar/url-shortener/main/screenshot.png"
   },
   {
     title: "Blog Platform",
@@ -25,6 +27,16 @@ const projects = [
     tech: ["Next.js", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/abhishekkatiyar/blog-site",
     live: "",
+    image: "https://raw.githubusercontent.com/abhishekkatiyar/blog-site/main/preview.png"
+  },
+  {
+    title: "GreenLoop",
+    description:
+      "An e-waste management platform built using NestJS and MongoDB. Enables users to sell electronic waste securely and sustainably.",
+    tech: ["NestJS", "MongoDB", "JWT", "TypeScript"],
+    github: "https://github.com/abhishekkatiyar/greenloop",
+    live: "",
+    image: "https://raw.githubusercontent.com/abhishekkatiyar/greenloop/main/demo.png"
   },
 ];
 
@@ -35,6 +47,7 @@ function Project() {
       <div className={styles.projectGrid}>
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
+            <img src={project.image} alt={project.title} className={styles.projectImage} />
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <div className={styles.techList}>
@@ -44,6 +57,7 @@ function Project() {
                 </span>
               ))}
             </div>
+            <div className={styles.technologiesUsed}>Technologies I Used</div>
             <div className={styles.links}>
               {project.github && (
                 <a href={project.github} target="_blank" rel="noreferrer">
@@ -58,6 +72,15 @@ function Project() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className={styles.allTechnologies}>
+        <h2>All Technologies Used</h2>
+        <div className={styles.techGroup}>
+          {[...new Set(projects.flatMap(p => p.tech))].map((tech, idx) => (
+            <span key={idx} className={styles.techTag}>{tech}</span>
+          ))}
+        </div>
       </div>
     </div>
   );
