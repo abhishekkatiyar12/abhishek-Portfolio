@@ -1,73 +1,79 @@
+/* Container for the entire navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 16px 32px;
-  background: rgba(255, 255, 255, 0.1);
+  padding: 16px 40px;
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Brand name / logo */
+/* Brand name or logo styling */
 .brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #ffffff;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
-/* Link container */
+/* Links container */
 .links {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 24px;
+  align-items: center;
 }
 
-/* Each link */
+/* Navigation link styles */
 .link {
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 10px 18px;
+  border-radius: 6px;
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1rem;
   transition: all 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: transparent;
 }
 
+/* Hover effect for links */
 .link:hover {
-  background-color: #ff4c4c;
-  color: #fff;
-  transform: scale(1.05);
+  background-color: #00b894;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 184, 148, 0.3);
 }
 
-/* Responsive: Stack links on mobile */
+/* Responsive styling for mobile screens */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    padding: 16px 20px;
+    gap: 12px;
   }
 
   .brand {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .links {
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    gap: 12px;
   }
 
   .link {
-    width: 80%;
+    width: 90%;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.08);
   }
 }
